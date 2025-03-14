@@ -1,0 +1,17 @@
+@import 'reset.scss';
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700);
+html,
+body {
+  font-family: 'Comfortaa', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #000;
+}
+.main {
+  flex: 1 1 auto;
+  height: 100%;
+}
