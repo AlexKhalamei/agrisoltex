@@ -1,7 +1,5 @@
 @charset "UTF-8";
-*:where(
-    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
-  ) {
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
 }
@@ -41,7 +39,7 @@ table {
 input,
 textarea {
   -moz-user-select: auto;
-  user-select: auto;
+       user-select: auto;
   -webkit-user-select: auto;
 }
 
@@ -54,7 +52,7 @@ textarea {
 meter {
   -webkit-appearance: revert;
   -moz-appearance: revert;
-  appearance: revert;
+       appearance: revert;
 }
 
 /* preformatted text - use only for this feature */
@@ -84,19 +82,19 @@ meter {
 /* revert for bug in Chromium browsers
    - fix for the content editable attribute will work properly.
    - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element */
-:where([contenteditable]:not([contenteditable='false'])) {
+:where([contenteditable]:not([contenteditable=false])) {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
   line-break: after-white-space;
   -webkit-line-break: after-white-space;
   -moz-user-select: auto;
-  user-select: auto;
+       user-select: auto;
   -webkit-user-select: auto;
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
-:where([draggable='true']) {
+:where([draggable=true]) {
   -webkit-user-drag: element;
 }
 
@@ -105,9 +103,27 @@ meter {
   all: revert;
 }
 
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/comfortaa.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/comfortaa-bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/comfortaa-light.otf") format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
 html,
 body {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
 body {
