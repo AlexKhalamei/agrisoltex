@@ -103,27 +103,10 @@ meter {
   all: revert;
 }
 
-@font-face {
-  font-family: "Comfortaa";
-  src: url("../fonts/comfortaa.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Comfortaa";
-  src: url("../fonts/comfortaa-bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Comfortaa";
-  src: url("../fonts/comfortaa-light.otf") format("opentype");
-  font-weight: lighter;
-  font-style: normal;
-}
 html,
 body {
   font-family: "Comfortaa", sans-serif;
+  font-weight: normal;
 }
 
 body {
