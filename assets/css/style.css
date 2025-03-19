@@ -103,6 +103,20 @@ meter {
   all: revert;
 }
 
+:root {
+  --primary: #020300;
+  --secondary: #fff;
+  --accent-gray: #8a8989;
+  --accent-green: #028d02;
+  --accent-blue: #0c3f89;
+  --accent-yellow: #f1b011;
+  --button-bg-hover-1: #006e00;
+  --button-border-hover-2: #025c02;
+  --button-color-hover-2: #e3e3e333;
+  --button-border-hover-2: #e6e6e6;
+  --button-shadow: #00000024;
+}
+
 html,
 body {
   font-family: "Comfortaa", sans-serif;
@@ -114,7 +128,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
-  color: #000;
+  color: var(--primary);
 }
 
 .main {
